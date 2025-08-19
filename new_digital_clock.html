@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            box-sizing: border-box;
+           
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height:100dvh;
+             background-color:#0d1164;
+        }
+        .clock{
+            background-color:#640d60f6;
+            padding:100px 100px;
+            border-radius:20px;
+            border:1px solid #ff00f2;
+            text-align: center;
+        }
+        .time{
+            font-size: 3rem;
+            font-weight: bolder;
+            color:#f78d60;
+        }
+        .ampm{
+            font-size:2rem;
+            opacity:.7;
+        }
+        .date{
+            font-size: 4rem;
+            text-transform: capitalize;
+            color:#f78d60;
+        }
+        .ctrlbtn button{
+            padding:20px 10px;
+            font-size:1.2rem;
+            border-radius: 20px;
+            text-transform: capitalize;
+            background-color: #ea2264;
+            color:white;
+            border:1px solid #ea2264;
+            margin-top:30px;
+        }
+        .ctrlbtn button:hover{
+            background-color:#753248ce;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="clock">
+            <div class="time">
+             <span class="hour">00</span> :
+             <span class="minute">00</span> :
+             <span class="second">00</span>
+             <span class="ampm" id="ampm">Am</span>
+            </div>
+            <div class="date">Monday,august 2,2000</div>
+            <div class="ctrlbtn"><button>pause</button></div>
+        </div>
+    </div>
+ <script>
+    let h = document.getElementById('hour');
+    let m = document.getElementbyId('minute');
+    let s = document.getElementbyId('second');
+    let ampm = document.getElementById('ampm');
+    let d = document.getElementById('date');
+    let ctrlbtn = document.ElementById('ctrlbtn');
+   let  timeid=null
+   function runnow(){
+            const now = new Date() ;
+            hours=now.gethours();
+            minutes=now.getminutes();
+            seconds=now.getseconds();
+
+           hours=textcontent.h;
+           minutes=textcontent.m;
+           secomds=textcontent.s;
+
+           const ispm = hours>= 12;
+           ampm = textcontent.ispm?'pm':'am'
+   }
+   function startClock(){
+    runnow();
+    timeid=setInterval(runnow, 1000);}
+        
+   
+     </script>
+</body>
+</html>
