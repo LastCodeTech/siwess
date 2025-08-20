@@ -7,8 +7,8 @@
     <script src="https://kit.fontawesome.com/39c5fdd9a0.js" crossorigin="anonymous"></script>
   <style>
      img{
-        height:200px;
-        width:200px;
+        height:150px;
+        width:150px;
         border-radius: 50%;
 
     }
@@ -16,25 +16,65 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height:100dvh;
+        margin-top: 20px;
+       
     }
     .part1 h2{
         text-transform: capitalize;
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 5rem;
+        line-height: 0px;
     }
     .part1 h4{
       text-transform: capitalize;
-        font-size: 2rem;
-        font-weight:3rem;   
+        font-size: 1.5rem;
+        font-weight:lighter;   
     }
     .part2{
         display: flex;
         gap:50px;
-    }
-    .part1{
         text-align: center;
+        line-height: 40px;
+        box-shadow: 0 0 3px rgba(0,0,0,0.5);
+        padding:15px;
+        border-radius: 10px;
+       
+       
     }
+    .icon{
+        font-size: 2rem;
+    }
+.text ,.value{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.part3{
+   display: flex;
+   justify-content: center;
+   margin-top:40px;
+  
+}
+.part3 button{
+     padding:20px 90px;
+     border-radius:20px;
+     border: none;
+     background-color: rgba(22, 20, 20, 0.959);
+     color:white;
+     font-size:1rem;
+     text-transform: capitalize;
+}
+.part3 button:hover{
+    background-color: rgb(22, 20, 20);
+}
+.card{
+   box-shadow:  0 0 8px rgba(0,0,0,0.5);
+   padding:30px;
+   border-radius:25px;
+}
+.rating span,.clients span,.price span{
+    display: block;
+}
+
   </style>
    
 
@@ -50,19 +90,23 @@
         <div class="part2">
              <div class="rating">
                 <i class="fa-solid icon fa-star"></i>
-                <h4 class="text">rating</h4>
-                <h4 class="value">4.9</h4>
+                <span class="text">rating</span>
+                <span class="value">4.9</span>
              </div>
              <div class="clients">
-                <i class="fa-solid fa-clone"></i>
-                <h4 class="text">clients</h4>
-                <h4 class="value">100+</h4>
+                <i class="fa-solid icon fa-clone"></i>
+                <span class="text">clients</span>
+                <span class="value">100+</span>
             </div>
              <div class="price">
                 <i class="fa-solid icon fa-money-check-dollar"></i>
-                <h4 class="text">price</h4>
-                <h4 class="value">$200/hr</h4>
+                <span class="text">price</span>
+                <span class="value">$200/hr</span>
              </div>
+        </div>
+
+        <div class="part3">
+            <button>Get in touch</button>
         </div>
         </div>
     </div>
