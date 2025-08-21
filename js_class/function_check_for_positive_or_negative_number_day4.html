@@ -6,13 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    
-
-
-
-
-
     <script>
+        //to check if a number is,positive negative or zero
         function check_number(x){
              if(x>0){
      console.log(x + ' is a positive number');
@@ -27,7 +22,17 @@
                 console.log('input a value')
              }
         }
-        check_number(0)
+        
+        // to check if a number is an odd or even number
+        function number_checker(x){
+       if(x%2==0){
+        console.log(x +' is an even number')
+       }
+       else{
+        console.log(x + ' is an odd number')
+       }
+        }
+        number_checker(200);
     </script>
 </body>
 </html>
