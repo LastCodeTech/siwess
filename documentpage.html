@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #inner span{
+           font-size: 4rem;
+           text-transform: capitalize;
+        }
+        #inner h5{
+            font-size:1.3rem;
+        }
+        .btn {
+        padding:10px 130px;
+        font-size:1.3rem;
+        color:#fff;
+        border:none;
+        background-color: rgb(123, 255, 0);
+        }
+        .btn:hover{
+          background-color: rgba(116, 223, 17, 0.541);
+        }
+        #more{
+           padding:10px 30px; 
+           border-radius: 10px;
+        }
+        #inner{
+            background-color: #e2cc04;
+            padding:30px 60px;
+            border-radius: 15px;
+            color:#fff;
+        }
+        #container{
+          
+             display:flex;
+             justify-content: center;
+            align-items: center;
+             min-height: 100dvh;
+             text-align: center; 
+            
+        }
+    </style>
+</head>
+<body>
+    <button class="btn" id="more">make payment </button> 
+    <div id="container">    
+        <div id="inner">
+        <span>thank you!</span>
+        <h5>your details have been successfully submitted<br />Thanks</h5>
+        <button class="btn" id="confirm">complete payment</button></div>
+    </div>
+</body>
+<script>
+let more = document.getElementById('more');
+let confirm=document.getElementById('confirm');
+let container=document.getElementById('container');
+let inner=document.getElementById('inner');
+   //toggle = more
+   //container= picture
+//let display = 'hide';
+       more.onclick=function(){
+       // if (display=='hide'){
+            display='show'
+            container.style.display='flex';    
+        }
+        //else{
+           
+       // }
+      // }
+      confirm.onclick=function(){
+ display='hide'
+            container.style.display='none';
+      }
+
+
+
+
+  
+</script>
+</html>

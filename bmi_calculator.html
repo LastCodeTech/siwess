@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+            
+        }
+        body{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height:100dvh;
+        }
+        input{
+            height: 40px;
+            width:300px;
+            font-weight: lighter;
+            border-radius:8px;
+            font-size:1.2rem;
+            padding:5px;
+        }
+        label{
+            font-size:2rem;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="inner">
+        <label>Result<br />
+        <input type="text" class="result"></label><br />
+        <label>height<br />
+        <input type ='text' placeholder="please input your height" class="height"></label><br />
+        <label>
+            weight<br /><input type="text" placeholder="pls input your weight" class="weight">
+        </label><br />
+        <button class="buttton">calculate my bmi</button>
+    </div>
+</div>
+
+<script>
+    let height=document.getElementByClassName('height');
+    let weight=document.getElementByClassName('weight');
+    let button=document.getElementsByClassName('button');
+    let display=document.getElementsByClassName('display')
+    let height_square=height*height;
+     function calculate(height,weight){
+        weight/height_square
+     }
+
+     button.addEventListener('click',function(){
+        calculate(height,weight);
+     })
+     display.textContent=calculate(height,weight);
+
+     
+
+
+</script>
+</body>
+</html>

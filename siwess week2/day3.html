@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            display: flex;
+             
+        }
+        #show,#hide,#toggle{
+             padding: 15px 30px;
+    margin-left: 50px;
+    border-radius: 10px;
+    background-color: aqua;
+    border:none;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    color:black;
+    margin-bottom:20px;
+   
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+             <div id="bnt">
+              <button id="show">show</button>
+                <button id="hide">hide</button>
+                  <button id="toggle">toggle</button>
+          </div>
+            <img src="../images/woman gym.jpg" id="picture">
+        </div>
+    </div>
+
+
+    <script>
+        let show=document.getElementById('show');
+        let hide=document.getElementById('hide');
+        let toggle =document.getElementById('toggle');
+        let picture = document.getElementById('picture');
+        
+        hide.onclick=function(){
+           picture.style.display='none';
+        }
+         show.onclick=function(){
+           picture.style.display='block';
+        }
+       let mode='no-display';
+       toggle.onclick=function(){
+        if (mode=='no-display'){
+            mode='display'
+            picture.style.display='block';
+            toggle.textContent="don't display image";
+            
+        }
+        else{
+            mode='no-display'
+            picture.style.display='none';
+            toggle.textContent=" display image";
+        }
+       }
+    </script>
+</body>
+</html>

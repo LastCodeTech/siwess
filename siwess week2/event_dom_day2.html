@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="red">red</button>
+     <button id="blue">blue</button>
+      <button id="green">green</button>
+<p id="paragraph"></p>
+
+
+
+<script>
+    let red = document.getElementById('red');
+    let blue = document.getElementById('blue');
+    let green = document.getElementById('green');
+    let paragraph = document.getElementById('paragraph');
+    red.onclick = function(){
+        paragraph.textContent='the background color is red';
+        document.body.style.backgroundColor='red';
+       
+    }
+    blue.onclick = function(){
+         paragraph.textContent='the background color is blue';
+         document.body.style.backgroundColor='blue';
+    }
+    green.onclick = function(){
+         paragraph.textContent='the background color is green';
+         document.body.style.backgroundColor='green';
+    }
+    
+
+    
+</script>
+</body>
+</html>

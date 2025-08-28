@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vdh;          
+        }
+        body{
+             background-color:rgba(53, 53, 129, 0.788);  
+        }
+        #btns{
+            margin-top:10px;
+            margin-left: 20px; 
+        }
+        #minus,#plus,#defaulty{
+ padding:5px 15px;
+  font-size:2rem;
+  margin-right:10px;
+  border:none;
+  background-color: rgba(0, 26, 255, 0.884);
+  color:white;
+  border-radius:10px;
+        }
+        #minus:hover,#plus:hover,#defaulty:hover{
+            background-color: rgb(25, 0, 255);
+        }
+        textarea{
+            border:2px solid white;
+            background-color: rgba(17, 0, 255, 0.733);
+            border-radius: 25px;
+            padding: 20px;
+             width: 600px;
+            height: 450px;   
+
+            
+        }
+        #textsize{
+            color:white;
+            outline: white;
+            
+  
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="inner">
+        <textarea id="textsize" rows="30px" cols="80px"></textarea>
+         <div id="btns">
+                <button id="minus">-</button>
+                <button id="plus">+</button>
+                <button id="defaulty">Default</button>
+            </div>
+    </div>
+   </div>
+<script>
+    let minus = document.getElementById('minus');
+    let plus = document.getElementById('plus');
+    let textsize = document.getElementById('textsize');
+    let defaulty = document.getElementById('defaulty');
+    
+    //  let size=1;
+    //  size+=myFontsize;
+    //  let myFontsize=size;
+    let i=0;
+    i>=2;
+    i++
+    plus.onclick = function(){
+        textsize.style.fontSize=i++ +'px';
+    }
+    minus.onclick = function(){
+        textsize.style.fontSize=i-- +'px';
+    }
+    defaulty.onclick= function(){
+         textsize.style.fontSize=1+'rem';
+    }
+
+
+   
+</script>
+</body>
+</html>
