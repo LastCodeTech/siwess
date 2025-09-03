@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/39c5fdd9a0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding:0px;
+            margin: 0px;
+           
+        }
+        #pre_inner{
+           background-color:  rgb(15, 15, 207);
+           padding: 10px;
+           box-shadow:4px 4px 20px rgba(0, 0, 255, 0.479);
+           border-radius: 10px;
+        }
+        .inner{background-color:white;
+            padding: 20px 30px;
+            border-radius: 10px;
+        }
+        .container{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height:100dvh;
+           
+        }
+        h1{
+            font-size:2.7rem;
+            text-transform: capitalize;
+            font-weight: bolder;
+            margin-bottom:50px;
+            letter-spacing:1px;
+            text-align: center;
+        }
+        input{
+           height:55px;
+           width:350px;  
+            outline:none;
+           font-size:1.4rem;
+           border-radius:5px;
+           border:1px solid rgb(15, 15, 207);
+            color:grey;
+            padding:5px 40px;
+            
+        }
+        #input1{
+           
+            position: relative;
+           
+        }
+        .icon{
+       font-size:1.5rem;
+       color:grey;
+       margin-left: 6px;
+      
+        }
+        .first{
+            position:absolute;
+            left:37%;
+            top:25.5%;
+        }
+        .second{
+             position:absolute;
+            left:37%;
+            top:48%;
+        }
+        #input2{
+
+        }
+        #link1{
+            font-size:1.2rem;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-weight: 300;
+            color:blue;
+        }
+        #btn{
+            margin-top: 30px;
+            margin-bottom:30px;
+            height:55px;
+            width:350px;
+            border:none;
+            background-color:rgb(15, 15, 207);
+           
+        }
+        #btn a{
+             color:white;
+             font-size:1.5rem;
+              text-transform: capitalize;
+              text-decoration: none;
+        }
+        #btn:hover{
+            background-color: rgba(15, 15, 207, 0.781);
+        }
+        #last{
+            font-size:1.2rem;
+           text-align: center;
+           letter-spacing: 2px;
+            font-weight: 300;
+        }
+        #last a{
+            color:blue;
+             text-decoration: none;
+        }
+       #div1,#div2{
+         margin-bottom: 50px;
+       }
+       #error1,#error2{
+        text-transform: capitalize;
+        font-weight:lighter;
+        font-size: 1rem;
+        padding-top:20px;
+       }
+#error3{
+    transform: translateY(-20px);
+     text-transform: capitalize;
+        font-weight:lighter;
+        font-size: 10px;
+        color:red;;
+
+     
+}
+   #toggle{
+    font-size:1.5rem;
+       color:grey;
+       position:absolute;
+       left:60%;
+       top:48%;
+   }    
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="pre_inner">
+        <div class="inner">
+            <h1>login form</h1>
+            <h4 id="error3"></h4>
+            <form>
+              <div id="div1"><input type="text" placeholder="Enter email Address" id="input1">
+                <i class="fa-regular icon  first fa-envelope"></i>
+                <h4 id="error1"></h4></div>
+                <br />
+
+
+               <div id="div2"> <input type ='password' placeholder="Password"  id="input2">
+                <i class="fa-solid icon second fa-lock"></i>
+               <button id='toggle'><i class="fa-solid  fa-eye-slash"></i></button>
+                <h4 id="error2"></h4> </div> <br />
+            </form>
+            <a href ='#' id="link1">Forgot password ? </a><br />
+            <button id="btn"><a href="#">Login</a></button><br />
+            
+            <span id="last">Not a member yet ? <a href='#'>Signup now</a></span><br /> 
+              
+         </div>
+        </div>
+    </div>
+
+    <script>
+        let input1 = document.getElementById('input1');
+        let input2 = document.getElementById('input2');
+        let error1 = document.getElementById('error1');
+        let  btn = document.getElementById('btn');
+        let input = document.getElementsByTagName('input');
+        let error3 = document.getElementById('error3');
+        let toggle = document.getElementById('toggle');
+
+      input1.addEventListener('input',function(){
+         //function emailInput (){
+         let input1_value=input1.value;
+         if(input1_value.includes('@gmail.com')){
+        error1.textContent='your email is valid';
+        error1.style.color='green';
+       
+      }
+      else{
+         error1.textContent='please input a valid email';
+        error1.style.color='red';
+      }
+    })
+     btn.addEventListener('click',function(){
+        
+   if(input1.value.trim()===''){
+          error1.textContent='email cant be empty';
+         error1.style.color='red';
+      }
+      
+   
+      if(input2.value.trim()===''){
+         error2.textContent='password cant be empty';
+        error2.style.color='red';
+      }
+      else{
+         error2.textContent='you inputed a strong password';
+        error2.style.color='green';
+      }
+       
+    }
+    )
+    btn.onclick=function(){
+        if(input1.value=='a@gmail.com' && input2.value=='apple'){
+        //    btn.innerHTML="<'window.location.href =//www.google.com'>";
+        window.location.href = 'https://www.google.com';
+        
+             
+        }
+        else{
+            error3.innerHTML='invalid credentials ,  create an account below'
+        }
+    }
+
+
+let input2State='hide_password';
+    toggle.onclick=function(){
+if(input2State==='hide_password'){
+    input2State = 'show_password'
+    input2.type='text';
+     toggle.innerHTML='<i class="fa-solid fa-eye"></i>';
+   
+}
+else{
+    
+    input2.type='password';
+    toggle.innerHTML='<i class="fa-solid fa-eye-slash"></i>'
+    input2State = 'hide_password';
+    
+
+}}
+      
+    </script>
+</body>
+</html>

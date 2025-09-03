@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #overlay{
+            background-color: black;
+            opacity:0.8;
+            position: fixed;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            display:none;
+        }
+
+        #modal{
+            position: absolute;
+            padding:20px 30px 50px 30px;
+            height:350px;
+            width:300px;
+            top:20%;
+            left:35%;
+            background-color: beige;
+            border-radius:15px;
+            text-align: center;
+           
+            display:none;
+        }
+        h3{
+            font-size:1.5rem;
+            font-weight: lighter;
+        }
+        button{
+            padding:8px 8px;
+            border:none;
+            font-size:1rem;
+            text-transform: capitalize;
+            background-color: blanchedalmond;
+            color:black;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div id="overlay"></div>
+    <div id="modal">
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis voluptatum eaque perferendis, facere, eum adipisci laudantium similique amet, totam tempora exercitationem aliquid dicta obcaecati perspiciatis repudiandae molestias? Vero, eligendi consectetur.</h3>
+        <button id="closeModal">Close</button>
+          
+    </div>
+    <button id="openModal">Open</button>
+  
+
+    <script>
+        let overlay = document.getElementById('overlay');
+         let modal = document.getElementById('modal');
+          let openModal = document.getElementById('openModal');
+           let closeModal = document.getElementById('closeModal');
+
+         openModal.onclick=function(){
+            overlay.style.display='block';
+            modal.style.display='block';
+         }
+        //  closeModal.addEventListener('click',function(){
+        //      overlay.style.display='none';
+        //     modal.style.display='none';
+        //  })
+         closeModal.onclick=function(){
+            overlay.style.display='none';
+            modal.style.display='none';
+         }
+
+    </script>
+</body>
+</html>
