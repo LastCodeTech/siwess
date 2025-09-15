@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        #otherImages{
+            display:grid;
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+        margin:30px 50px;
+        row-gap: 10px;
+        column-gap:10px;
+        justify-content: center;
+        }
+       #otherImages img{
+        height:130px;
+        width:210px;
+        border-radius:10px;
+         border:5px solid rgb(252, 81, 109);
+            box-shadow:4px 4px 8px rgba(0, 0, 0, 0.459);
+            cursor: pointer;
+       }
+      
+        #previewScreen{
+               display: flex;
+         justify-content: center;
+         align-items: center;
+           
+
+        }
+        #previewScreen img{
+            height:300px;
+            width:500px;
+             border-radius:10px;
+            border:5px solid rgb(252, 81, 109);
+            box-shadow:4px 4px 8px rgba(0, 0, 0, 0.459);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="previewScreen">
+            <img src="../images/blue background image.jpg">
+        </div>
+        <div id="otherImages">
+            <img src="../images/british flag.png">
+            <img src="../images/hero_section image.webp">
+            <img src="../images/last last background.jpg">
+            <img src="../images/istock back.jpg">
+            <img src="../images/new istock back.jpg">
+            <img src="../images/saudi flag.png">
+            <img src="../images/truck 1.jpg">
+            <img src="../images/truck 10.jpg">
+            <img src="../images/truck 3.jpg">
+            <img src="../images/truck 7.jpg">
+        </div>
+    </div>
+    <script>
+    let otherImages = document.getElementById('otherImages');
+    let previewScreen = document.querySelector('#previewScreen img');
+    let img = document.querySelectorAll('#otherImages img');
+    
+    
+    // otherImages.forEach(img=>{
+    //     img.addEventListener('click',function(){
+    //       console.log('hi');
+    //     })
+    // })
+
+    img.forEach(img=>{
+        img.addEventListener('click',function(){
+        let source = img.src;
+          previewScreen.setAttribute('src',source);
+
+        })
+    })
+
+  
+     
+
+    </script>
+</body
+</html>

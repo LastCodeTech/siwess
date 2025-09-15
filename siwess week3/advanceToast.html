@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    button{
+        padding:8px 12px ;
+        font-size:1.3rem;
+        text-transform: capitalize;
+    }
+    #container{
+        position: relative;
+    }
+    #toastContent{
+      font-size:1rem;
+        text-transform: capitalize;
+        font-weight: lighter;
+        color:white;
+        
+    }
+    #toast{
+        position:absolute;
+       top:10px;
+       right:0;
+       display:none;
+        max-width:300px ;
+        padding:20px 30px;
+        line-height:20px;
+        border-radius:10px;
+        padding:20px 40px ;
+        letter-spacing: 2px;
+    }
+    #toastClose{
+        font-size:2.5rem;
+        color:white;
+        background-color: red;
+       margin-top:10px;
+       margin-bottom:10px;
+       margin-left:15px;
+       padding: 4px;
+       font-weight: bolder;
+        position: absolute;
+        left:73%;
+         top:2%;
+         cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <div id="container">
+<button id="deleteBtn">Delete</button>
+<button id="copyBtn">Copy</button>
+<button id="generateBtn">Generate</button>
+<button id="PasteBtn">Paste</button>
+
+<div id="toast">
+    <div id="toastContent"></div>
+    <div id="toastClose">&times;</div>
+</div></div>
+<script>
+    let deleteBtn= document.getElementById('deleteBtn');
+    let copyBtn= document.getElementById('copyBtn');
+    let generateBtn= document.getElementById('generateBtn');
+    let PasteBtn= document.getElementById('PasteBtn');
+    let toast= document.getElementById('toast');
+    let toastContent= document.getElementById('toastContent');
+    let toastClose= document.getElementById('toastClose');
+
+
+function showToast(content,type){
+  
+    if (type=='success'){
+        toast.style.backgroundColor='green';
+        toast.style.display='block';
+    }
+    else if(type == 'danger'){
+        toast.style.backgroundColor='rgba(233, 17, 17, 0.815)';
+        toast.style.display='block';
+    }
+    else{
+        toast.style.backgroundColor='black';
+        toast.style.display='block';
+    }
+    toastContent.textContent=content,setTimeout(closeToast,6000) ;
+}
+// deleteBtn.onclick=showToast('deleted','success');
+  deleteBtn.addEventListener('click',  () => showToast('deleted','danger'));
+ copyBtn.addEventListener('click', () => showToast('copied','success'))
+generateBtn.addEventListener('click', ()=> showToast('token generated','success'))
+PasteBtn.addEventListener('click',()=>showToast('pasted!!!','success'))
+toastClose.addEventListener('click',closeToast);
+function closeToast(){
+    toast.style.display='none'
+   
+}
+
+</script>
+</body>
+</html>

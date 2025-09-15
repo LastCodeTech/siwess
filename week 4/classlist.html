@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+  #box{
+            height:400px;
+            width:400px;
+            background-color: rgb(245, 142, 8);
+            color:white; 
+            padding:30px 40px;
+        }
+        button {
+            margin-top:20px;
+        }
+        .newmode{
+             background-color: rgb(194, 245, 8) !important;
+            color:white; 
+        }
+    </style>
+</head>
+<body>
+
+        <div id="box">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti ea laudantium sunt nihil inventore eaque nam hic nesciunt delectus, ipsam rerum earum sapiente deserunt quasi dignissimos corrupti, quia laboriosam? Dignissimos.
+
+        </div>
+        <button id="btn">light</button>
+
+
+        <script>
+            let btn = document.getElementById('btn');
+            let box = document.getElementById('box');
+   
+            
+            btn.addEventListener('click',function(){
+               
+                box.classList.toggle('newmode');
+                
+            
+            })
+        </script>
+
+</body>
+</html>

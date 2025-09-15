@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #toaster{
+            position:absolute;
+            top:4%;
+            border-radius: 12px;
+            display:none;
+            width:100%;
+            text-align: center;
+            font-size:2rem;
+            font-weight:lighter;
+            padding:20px ;
+        }
+        
+    </style>
+</head>
+<body>
+    
+<button id="delete-btn">delete</button>
+    <div id="toaster">
+       <button id="close-btn">close</button>
+    </div>
+
+    <script>
+        let toaster = document.getElementById('toaster');
+        let deletebtn=document.getElementById('delete-btn');
+        let closebtn = document.getElementById('close-btn');
+        deletebtn.addEventListener('click',function(){
+            toaster.style.display='block';
+            toaster.textContent='deleted successfully !!!';
+            toaster.style.backgroundColor='green';
+            toaster.style.color='white';
+        })
+        closebtn.onclick=function(){
+            toaster.style.display='none';
+        }
+
+    </script>
+</body>
+</html>

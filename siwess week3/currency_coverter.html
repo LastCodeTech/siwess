@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        select{
+            height:50px;
+            width:300px;
+            border-radius: 10px;
+            background-color: white;
+            color:black;
+        }
+        input{
+            height:50px;
+            width:300px;
+            border-radius: 10px;
+            outline:none;
+            position: relative;
+
+        }
+        #from{
+            margin-bottom:30px ;
+            margin-top:30px;
+
+        }
+        #inputAmount{
+            font-size:1.4rem;
+            font-weight: lighter;
+            line-height:50px;
+        }
+        label{
+            font-size: 1.3rem;
+            text-transform: capitalize;
+        }
+        #container{
+            position:absolute;
+            top:30%;
+            right:30%;
+            text-align: center;
+            background-color: rgb(51, 51, 179);
+            color:white;
+            border-radius:20px;
+            box-shadow:4px 4px 5px rgba(13, 13, 226, 0.795);
+            
+        }
+        #inner{
+background-color: rgba(28, 28, 187, 0.842);
+padding:20px 30px;
+ border-radius:20px;
+        }
+        #container h2{
+            font-size:2rem;;
+            text-transform:capitalize;
+            font-weight:light;
+        }
+        h1{
+            position: absolute;
+            top:26%;
+            right:12%;
+            color:green;
+        }
+        
+        
+    </style>
+</head>
+<body>
+   <div id="container">
+    <h2>currency converter</h2>
+    <div id="inner">
+        <label>Enter Amount
+        <input type = 'text' id='inputAmount'></label><h1 id="navigate"></h1><br />
+
+
+      <div id="from">  <label >
+            from
+            <select id=" convertFrom" name="" >
+                <option value="USD">    United state Dollar(USD)</option>
+                <option value="EUR">Euro(EUR)</option>
+                <option value="NGN">Nigerian Naira(NGN)</option>
+                <option value="GBP">British pound(GBP)</option>
+                <option value="SAR"> Saudi Riyal(SAR)</option>
+            </select>
+        </label></div> <br />
+
+
+       <div id="to"> <label >To
+            <select id=" convertTo" name="" >
+                <option value="USD"> United state Dollar(USD)</option>
+                <option value="EUR">Euro(EUR)</option>
+                <option value="NGN">Nigerian Naira(NGN)</option>
+                <option value="GBP">British pound(GBP)</option>
+                <option value="SAR">Saudi Riyal(SAR)</option>
+            </select>
+        </label></div><br />
+        <button>Convert</button>
+        <h4><b>amunt</b> to <b></b> is <b></b></h4>
+    </div>
+   </div> 
+
+
+
+    <script>
+let from = document.getElementById('from');
+let to = document.getElementById('to');
+let inputAmount=document.getElementById('inputAmount');
+let navigate=document.getElementById('navigate');
+
+
+let main_inputAmont = inputAmount.value;//2
+
+
+
+    </script>
+</body>
+</html>
