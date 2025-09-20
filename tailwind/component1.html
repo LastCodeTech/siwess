@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  
+        <div class="content p-7">
+            <div class="head flex justify-between items-center px-0">
+                <h1 class="text-3xl uppercase font-bold">Reeblocks</h1>
+              
+                <ul class="text-base  hidden md:flex justify-center space-x-5    font-semibold capitalize ">
+                    <li>solutions</li>
+                    <li>industries</li>
+                    <li>fees</li>
+                    <li>about reeblocks</li>
+                </ul>
+            
+            <div class=" hidden md:flex  items-center space-x-4">
+                <h2 class="text-base ">Sign in</h2>
+                <button class="text-base bg-neutral-950 hover:bg-neutral-800 py-2 px-2 text-white font-semibold rounded-lg">Create free account</button>
+            </div>
+            <button class="md:hidden text-4xl hamburger">  ☰</button>
+            </div>
+            
+            <ul class="text-base  hidden  px-6 pb-4 space-y-2   font-semibold capitalize menu">
+                    <li class="flex justify-center border-b pt-4">solutions</li>
+                    <li class="flex justify-center border-b">industries</li>
+                    <li class="flex justify-center border-b">fees</li>
+                    <li class="flex justify-center border-b">about reeblocks</li>
+            <!-- <div class=" md:hidden flex   items-center space-x-4"> -->
+                <h2 class="text-base flex justify-center border-b">Sign in</h2>
+                <button class="text-base bg-neutral-950 hover:bg-neutral-800 text-white font-semibold rounded-lg px-4 py-2 w-full">Create free account</button>
+            </ul>
+
+             <div class="section   flex flex-col justify-between items-center  md:flex-row md:mx-30 ">
+                <div class="sectionLeft">
+                <h1 class="text-5xl font-bold capitalize my-8">A special credit card<br />made for<br />developers</h1>
+                <h4 class="text-xl mb-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum provident </h4>
+                <div class="flex flex-col justify-between">
+                    <input type="email" placeholder="enter email address" class=" w-md  py-3 px-3 border border-black-300 rounded-lg ">
+                <button class="bg-neutral-950 md:w-md hover:bg-neutral-800 w-40 mt-4 p-2 text-white font-semibold rounded-lg  ">Get free card</button>
+                </div>
+                <div class="flex gap-10 mt-9">
+                <h2 class="text-2xl font-bold">2934 <b class="text-md capitalize font-semibold">cards<br/>delivered</b></h2>
+                <h2 class="text-2xl font-bold">$1m+ <b class="text-md capitalize font-semibold">transaction<br/>completed</b></h2>
+            </div>
+            </div>
+                <div class="sectionRight">
+                    <img src="../images/SL-110820-37810-09-removebg-preview.png" class=" ">
+                </div>
+            </div>
+            
+       </div>
+       <script>
+        const hamburger = document.getElementsByClassName('hamburger')[0];
+         const menu = document.getElementsByClassName('menu')[0];
+        let display = 'hide';
+        hamburger.addEventListener('click',function(){
+            if(display=='hide'){
+                display='show'
+                menu.style.display='block'
+                hamburger.textContent='x';
+            }
+            else{
+                display='hide'
+                menu.style.display='none'
+                hamburger.textContent='☰';
+            }
+        })
+        
+        
+       </script>
+   
+</body>
+</html>

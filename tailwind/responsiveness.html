@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+<header class="border-b">
+  <nav class="flex items-center justify-between py-4 px-6">
+    <!-- Logo -->
+    <div class="text-xl font-bold">/RAREBLOCKS</div>
+
+    <!-- Desktop Nav Links -->
+    <ul class="hidden md:flex space-x-8 text-gray-600 font-medium">
+      <li><a href="#">Solutions</a></li>
+      <li><a href="#">Industries</a></li>
+      <li><a href="#">Fees</a></li>
+      <li><a href="#">About Rareblocks</a></li>
+    </ul>
+
+    <!-- Right actions (Sign in + CTA) -->
+    <div class="hidden md:flex items-center space-x-4">
+      <a href="#" class="text-gray-600">Sign in</a>
+      <a href="#" class="bg-gray-900 text-white px-4 py-2 rounded-lg">
+        Create free account
+      </a>
+    </div> 
+
+    <!-- Mobile Menu Button -->
+    <button class="md:hidden p-2 border rounded">
+      ☰
+    </button>
+  </nav>
+
+  <!-- Mobile Nav Links -->
+  <div class="md:hidden px-6 pb-4 space-y-2">
+    <a href="#" class="block text-gray-600">Solutions</a>
+    <a href="#" class="block text-gray-600">Industries</a>
+    <a href="#" class="block text-gray-600">Fees</a>
+    <a href="#" class="block text-gray-600">About Rareblocks</a>
+    <a href="#" class="block text-gray-600">Sign in</a>
+    <a href="#" class="block bg-gray-900 text-white px-4 py-2 rounded-lg">
+      Create free account
+    </a>
+  </div>
+</header>
+
+<section class="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-12">
+  <!-- Text -->
+  <div class="md:w-1/2 space-y-6 text-center md:text-left">
+    <h1 class="text-3xl md:text-5xl font-bold">
+      A special credit card <br> made for <span class="text-indigo-600">Developers.</span>
+    </h1>
+    <p class="text-gray-600">Build faster, pay smarter. Everything you need in one card.</p>
+    <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 justify-center md:justify-start">
+      <input type="email" placeholder="Enter your email" 
+        class="px-4 py-2 border rounded-lg w-full sm:w-64">
+      <button class="bg-gray-900 text-white px-6 py-2 rounded-lg">Get Started</button>
+    </div>
+  </div>
+
+  <!-- Image -->
+  <div class="md:w-1/2 mt-8 md:mt-0">
+    <img src="../images/SL-110820-37810-09-removebg-preview.png" class="w-full h-auto object-contain" alt="Hero image">
+  </div>
+</section>
+
+
+
+
+
+
+</body>
+</html>

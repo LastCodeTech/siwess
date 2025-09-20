@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="newsWeb.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div id="header">
+                <h1 id="logo">News Hub</h1>
+                <h2>
+                <ul>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>Politics</a></li>
+                    <li><a href='#'>education</a></li>
+                    <li><a href='#'>security</a></li>
+                </ul></h2>
+            </div>
+            <div class="heroSection">
+                <div id="heroSectionTxt">
+                    <h2>The World. Without the Filter.</h2>
+                    <p>Unbiased, comprehensive coverage of global events, from politics to culture</p>
+                    <button><a href='#'>Read more</a></button>
+                </div>
+                <div id="heroSectionImg">
+                    <img src="../images/6423794-removebg-preview.png">
+                </div>
+            </div>
+            <div id="news">
+               
+               <!-- <img src="#" id="newsImg">
+               <h3 id="description"></h3>
+               <p id="content"></p>
+               <h4 id="publishedAt"></h4> -->
+
+                
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <script>
+        const news=document.getElementById('news');
+        const title= document.getElementById('title');
+         const newsImg = document.getElementById('newsImg');
+          const description= document.getElementById('description');
+           const content= document.getElementById('content');
+            const publishedAt= document.getElementById('publishedAt');
+           
+        const apiKey = '73967f5c92da13faddcd9c6cf6bec473';
+        const url ='https://gnews.io/api/v4/search?q=example&lang=en&max=20&apikey=' +apiKey;
+       
+        async function getNews(){
+            const response = await fetch (url);
+            const data = await response.json();
+            let articles=data.articles;
+            for( i=0;i<articles.length;i++){
+                // console.log(articles[i]['title'])
+                // title.textContent=articles[i]['title'];
+                // newsImg.src=articles[i]['image'];
+                // let allImgs =newsImg.src;
+                //  allImgs=articles[i]['image'];
+                let description=articles[i]['description'];
+                let content=articles[i]['content'];
+                let publishedAt=articles[i]['publishedAt'];
+
+
+
+
+                let newsTitle = articles[i]['title'];
+            //    news.innerHTML +='<img src="' + allImgs + '">';
+            let img = document.createElement("img");
+img.src = articles[i]['image'];   // set image from API
+news.appendChild(img);            // put it inside your news container
+img.style.height=300+'px';
+img.style.width=400+'px';
+img.style.borderRadius=10+'px';
+
+               news.innerHTML+='<h3 id="description" style="margin-top:10px;margin-bottom:10px">'+description+'</h3>';
+               news.innerHTML +=' <p id="content" style="margin-top:10px;margin-bottom:10px">'+content+'</p>';
+               news.innerHTML+='<h4 id="publishedAt" style="margin-top:10px;margin-bottom:10px">'+publishedAt+'</h4>';
+
+
+
+
+                news.innerHTML += '<h2 id="title" style="margin-top:40px;margin-bottom:20px">'+newsTitle+'</h2>';
+            }
+           
+            
+        }
+        getNews();
+
+       
+    </script>
+</body>
+</html>

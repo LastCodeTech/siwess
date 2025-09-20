@@ -1,0 +1,89 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+h1, h2 {
+  font-family: 'Merriweather', serif;
+}
+p,h3,h4 {
+  font-family: 'Open Sans', sans-serif;
+}
+#header ul{
+    display:flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    gap:20px;
+    margin-top:-45px;
+  
+}
+#logo{
+    font-size:2.5rem;
+    color:#31326F;
+    font-weight: bolder;
+}
+#header ul a{
+      text-decoration: none;
+      color:white;
+      text-transform: capitalize;
+      font-weight: lighter;
+}
+#header ul a:hover{
+    color:#637AB9;
+    cursor: pointer;
+}
+#header{
+    background-color:#4FB7B3;
+    padding:30px 40px;
+}
+#heroSectionTxt h2{
+ text-decoration: none;
+      color:white;
+      font-size: 3rem;
+      font-weight: lighter;
+}
+#heroSectionTxt p{
+ text-decoration: none;
+      color:white;
+      font-size: 1.2rem;
+      font-weight:bold;
+      margin-top:20px;
+      margin-bottom: 20px;
+}
+.heroSection{
+    background: #31326F;
+background: radial-gradient(circle, rgba(49, 50, 111, 1) 0%, rgba(79, 183, 179, 1) 72%, rgba(99, 122, 185, 1) 100%);
+padding:30px 20px;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+#heroSectionTxt button{
+padding:10px 12px;
+border:none;
+background-color:#31326F;
+margin-top: 20px;
+ border:1px solid #31326F;
+}
+#heroSectionTxt{
+    text-align: center;
+}
+#heroSectionTxt button a{
+    color:white;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size:1rem;
+}
+#heroSectionTxt button:hover{
+    background-color: #637AB9;
+    cursor: pointer;
+    border:1px solid white;
+}
+#news{
+    padding: 40px 60px;
+    text-align: center;
+    background-color:#A8FBD3;
+   
+}
+
+
