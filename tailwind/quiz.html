@@ -4,120 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&family=Comic+Neue:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="birthdayweb.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-
-    <section class="flex justify-center text-center p-8 sm:p-12 lg:p-16 items-center mt-5 bg-gradient-to-r from-pink-100 via-yellow-100 to-sky-100">
-  <div>
-    <h3 class="text-3xl sm:text-4xl lg:text-5xl font-thin mt-3">
-      Countdown to Khadijah's Birthday 🎂
-    </h3>
-
-    <!-- Countdown -->
-    <div class="flex flex-col sm:flex-row lg:flex-row gap-4 mt-8 justify-center">
-      <div class="days border-2 p-4 text-xl sm:text-2xl rounded-md">
-        Day: <b id="days" class="text-3xl font-bold text-pink-500">00</b>
-      </div>
-      <div class="hours border-2 p-4 text-xl sm:text-2xl rounded-md">
-        Hours: <b id="hours" class="text-3xl font-bold text-pink-500">00</b>
-      </div>
-      <div class="minutes border-2 p-4 text-xl sm:text-2xl rounded-md">
-        Minutes: <b id="minutes" class="text-3xl font-bold text-pink-500">00</b>
-      </div>
-      <div class="seconds border-2 p-4 text-xl sm:text-2xl rounded-md">
-        Seconds: <b id="seconds" class="text-3xl font-bold text-pink-500">00</b>
-      </div>
-      <p id="countdown-message" class="mt-4 text-lg font-bold text-purple-700"></p>
-    </div>
-
-    <!-- Buttons -->
-    <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="#card" class="text-base bg-pink-400 hover:bg-pink-600 text-white px-4 py-2 rounded-md">
-        Skip to Birthday Card
-      </a>
-      <a href="#"  class="celebrateBtn text-base bg-pink-400 hover:bg-pink-600 text-white px-4 py-2 rounded-md">
-        Celebrate Now
-      </a>
-    </div>
-  </div>
-</section>
-
-
-    <div class="bg-gradient-to-b from-pink-100 via-purple-100 to-yellow-100 p-15 items-center text-center  flex justify-center ">
-        <div>
-            <h1 class="text-5xl font-thin my-3">Happy Birthday Khadijah</h1>
-            <h3 class="font-thin text-2xl my-3">You’re growing bigger, brighter, and more awesome every year!</h3>
-            <img src="../images/woman gym.jpg" class="h-70 w-100 rounded-md mx-auto ">
-             <button class="mt-5 bg-pink-400 text-white hover:bg-pink-600 px-2 py-1 text-base rounded-md">See the Timeline</button>
-            
-             <span class="absolute top-10 left-10 text-4xl float">🎈</span>
-                <span class="absolute bottom-20 right-12 text-4xl float">🎂</span>
-              <span class="absolute top-24 right-20 text-4xl float">🌸</span>
-                 <span class="absolute bottom-10 left-16 text-4xl float">🍭</span>
-            </div>
-           </div>
-<div id="wrapper">
-  <!-- Modal / Screen -->
-  <div id="screen" class="fixed inset-0 flex items-center justify-center bg-black/40 hidden z-[200]">
-    <div class="relative">
-      <img src="../images/blue background image.jpg" class="h-100 w-auto rounded-md mx-auto">
-      <button id="close" class="absolute top-2 right-2 bg-pink-500 text-white rounded-full px-2 py-1 text-sm">
-        ✕
-      </button>
-    </div>
-  </div>
-
-  <!-- Glass overlay -->
-  <div id="glass" class="bg-gray-900 fixed inset-0 z-[100] opacity-20 hidden"></div>
-
-  <!-- Main content -->
-  <div class="text-center px-8 bg-pink-200 py-10">
-    <h1 class="text-5xl pb-5">My Journey So Far 🎀✨</h1>
-    <div id="allImages" class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-5 mx-auto max-w-7xl">
-
-      <div class="hover:bg-amber-400 bg-amber-500 py-5 px-3 rounded-xl text-white">
-        <img src="../images/british flag.png" class="h-40 w-auto mx-auto rounded-xl">
-        <h3 class="text-2xl pt-2 uppercase">2024</h3>
-        <h4 class="capitalize text-base">caption</h4>
-      </div>
-
-      <div class="hover:bg-yellow-300 bg-yellow-400 py-5 px-3 rounded-xl text-white">
-        <img src="../images/british flag.png" class="h-40 w-auto mx-auto rounded-xl">
-        <h3 class="text-2xl pt-2 uppercase">2024</h3>
-        <h4 class="capitalize text-base">caption</h4>
-      </div>
-
-      <div class="hover:bg-lime-200 bg-lime-300 py-5 px-3 rounded-xl text-white">
-        <img src="../images/hero_section image.webp" class="h-40 w-auto mx-auto rounded-xl">
-        <h3 class="text-2xl pt-2 uppercase">2024</h3>
-        <h4 class="capitalize text-base">caption</h4>
-      </div>
-
-      <div class="hover:bg-green-200 bg-green-300 py-5 px-3 rounded-xl text-white">
-        <img src="../images/british flag.png" class="h-40 w-auto mx-auto rounded-xl">
-        <h3 class="text-2xl pt-2 uppercase">2024</h3>
-        <h4 class="capitalize text-base">caption</h4>
-      </div>
-
-      <div class="hover:bg-teal-400 bg-teal-500 py-5 px-3 rounded-xl text-white">
-        <img src="../images/new istock back.jpg" class="h-40 w-auto mx-auto rounded-xl">
-        <h3 class="text-2xl pt-2 uppercase">2024</h3>
-        <h4 class="capitalize text-base">caption</h4>
-      </div>
-
-      <div class="hover:bg-purple-300 bg-purple-400 py-5 px-3 rounded-xl text-white">
-        <img src="../images/british flag.png" class="h-40 w-auto mx-auto rounded-xl">
-        <h3 class="text-2xl pt-2 uppercase">2024</h3>
-        <h4 class="capitalize text-base">caption</h4>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-        <!-- ====== QUIZ + FINAL CARD (fixed, responsive) ====== -->
+<body>
+    <!-- ====== QUIZ + FINAL CARD (fixed, responsive) ====== -->
 <section class="bg-yellow-100 pt-16 pb-12">
   <div class="max-w-6xl mx-auto px-4">
     <!-- Page heading -->
@@ -191,7 +81,7 @@
 </section>
 
 <!-- FINAL BIRTHDAY CARD -->
-<section id="card" class="celebrateBtn py-16 flex items-center justify-center bg-gradient-to-r from-pink-100 via-yellow-100 to-purple-100">
+<section id="card" class="py-16 flex items-center justify-center bg-gradient-to-r from-pink-100 via-yellow-100 to-purple-100">
   <div class="bg-white rounded-3xl shadow-2xl p-10 max-w-lg text-center">
     <h2 class="text-4xl font-bold text-pink-600 mb-4">🎂 Happy Birthday Princess! 💖</h2>
     <p class="text-lg text-purple-700 mb-6">
@@ -204,17 +94,22 @@
     </button>
   </div>
 </section>
-<section class="bg-blue-200 p-2">
-    <h1 class="text-xl text-center capitalize text-blue-900">Lastcode-Tech @2025</h1>
-</section>
-        
 
-           
-    
+<script>
+    document.querySelectorAll(".quiz-option").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const reply = btn.dataset.reply;
+    const responseBox = btn.parentElement.parentElement.querySelector(".quiz-response");
+    responseBox.textContent = reply;
 
+    // Add highlight to chosen button
+    btn.parentElement.querySelectorAll(".quiz-option").forEach(opt => {
+      opt.classList.remove("ring-4", "ring-yellow-400");
+    });
+    btn.classList.add("ring-4", "ring-yellow-400");
+  });
+});
 
-    <script src="birthdayweb.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
-
+</script>
 </body>
 </html>
