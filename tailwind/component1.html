@@ -9,8 +9,9 @@
 <body>
   
         <div class="content p-7">
-            <div class="head flex justify-between items-center px-0">
-                <h1 class="text-3xl uppercase font-bold">Reeblocks</h1>
+            <div class="head flex justify-between items-center px-15">
+                
+                <h1 class="text-2xl uppercase font-bold">Reeblocks</h1>
               
                 <ul class="text-base  hidden md:flex justify-center space-x-5    font-semibold capitalize ">
                     <li>solutions</li>
@@ -36,21 +37,32 @@
                 <button class="text-base bg-neutral-950 hover:bg-neutral-800 text-white font-semibold rounded-lg px-4 py-2 w-full">Create free account</button>
             </ul>
 
-             <div class="section   flex flex-col justify-between items-center  md:flex-row md:mx-30 ">
-                <div class="sectionLeft">
-                <h1 class="text-5xl font-bold capitalize my-8">A special credit card<br />made for<br />developers</h1>
+             <div class="section   flex flex-col-reverse justify-between items-center  md:flex-row md:mx-30 ">
+                <div class="sectionLeft ml-15">
+                <h1 class="text-5xl font-bold capitalize mt-20  mb-8 leading-snug text-neutral-800">A special credit card<br />made for<br />developers.</h1>
                 <h4 class="text-xl mb-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum provident </h4>
                 <div class="flex flex-col justify-between">
                     <input type="email" placeholder="enter email address" class=" w-md  py-3 px-3 border border-black-300 rounded-lg ">
                 <button class="bg-neutral-950 md:w-md hover:bg-neutral-800 w-40 mt-4 p-2 text-white font-semibold rounded-lg  ">Get free card</button>
                 </div>
-                <div class="flex gap-10 mt-9">
+                <!-- <div class="flex gap-10 mt-9">
                 <h2 class="text-2xl font-bold">2934 <b class="text-md capitalize font-semibold">cards<br/>delivered</b></h2>
                 <h2 class="text-2xl font-bold">$1m+ <b class="text-md capitalize font-semibold">transaction<br/>completed</b></h2>
+            </div> -->
+            <div class="flex gap-6 mt-3">
+            <div class="flex gap-3">
+                <span class="text-5xl">2943</span>
+                <span class="text-xl capitalize font-thin">cards<br /> delivered</span>
             </div>
+            <div class="flex">
+                <span class="text-5xl">$1m+</span>
+                <span class="text-xl capitalize font-thin">transaction<br /> completed</span>
+            </div>
+            </div>
+
             </div>
                 <div class="sectionRight">
-                    <img src="../images/SL-110820-37810-09-removebg-preview.png" class=" ">
+                    <img src="../images/card_imag-removebg-preview.png "class='w-150 h-130 mt-20'>
                 </div>
             </div>
             
@@ -62,12 +74,12 @@
         hamburger.addEventListener('click',function(){
             if(display=='hide'){
                 display='show'
-                menu.style.display='none'
+                menu.style.display='block'
                 hamburger.textContent='x';
             }
             else{
                 display='hide'
-                menu.style.display=''
+                menu.style.display='none'
                 hamburger.textContent='☰';
             }
         })
