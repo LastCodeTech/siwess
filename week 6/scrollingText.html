@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <style>
+        @keyframes marquee{
+            0%{transform: translateX(0%);}
+            100%{transform:translateX(-100%);}
+        }
+        .animate-marquee{
+            animation:marquee 5s linear infinite;
+        }
+     </style>
+</head>
+<body class="bg-emerald-500 flex justify-center mt-15 ">
+    <div>
+        <div ><h1 id="scroll" class="text-4xl font-semibold capitalize text-white ">Breaking News.......</h1></div>
+        
+        <div class="flex gap-8 my-10 text-center">
+            <button id='stop'class="bg-red-400 hover:bg-red-500 text-white capitalize border-1 py-1 px-2 rounded-md font-bold">Stop</button>
+             <button id='resume'class="bg-yellow-300 hover:bg-yellow-400 text-white capitalize border-1 py-1 px-2 rounded-md font-bold">resume</button>
+        </div>
+    </div>
+
+    <script>
+        const scroll = document.getElementById('scroll');
+        const stop = document.getElementById('stop');
+        const resume = document.getElementById('resume');
+
+
+        stop.addEventListener('click',function(){
+            scroll.classList.remove('animate-marquee')
+        })
+         resume.addEventListener('click',function(){
+            scroll.classList.add('animate-marquee')
+        })
+
+    </script>
+</body>
+</html>
