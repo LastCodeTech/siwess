@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+            <script src="https://kit.fontawesome.com/39c5fdd9a0.js" crossorigin="anonymous"></script> 
+             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+ 
+        <div class="md:flex">
+        <div class="left bg-blue-950 text-white pt-5 pb-5 w-80 hidden md:block">
+             <h1 class="text-4xl font-bold capitalize"><i class="fa-solid fa-certificate text-blue-600"></i>Logo</h1>
+            <div class="nav-item  text-xl font-thin capitalize mx-3 ">
+                <div class="mb-10 mt-5 border-b-1">
+                    <ul >
+                        <li class="py-2"><a href='#'><em class="fa-solid fa-house"></em> Dashboard</a> </li>
+                 <li class="py-2"><a href='#'><em class="fa-solid fa-chart-simple"></em> tickets</a></li>
+                  <li class="py-2"><a href='#'><em class="fa-solid fa-user"></em> agent</a></li>
+                  <li class="py-2"><a href='#'><em class="fa-solid fa-users"></em> customers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="mb-10 border-b-1">
+                    <ul>
+                          <li class="py-2"><a href='#'><i class="fa-solid fa-file"></i> products</a></li>
+                 <li class="py-2"><a href='#'><i class="fa-solid fa-bell"></i> orders</a></li>
+                  <li class="py-2"><a href='#'><i class="fa-solid fa-chart-gantt"></i> analytics</a></li>
+                    </ul>
+                </div>
+                  <li><a href='#'><i class="fa-solid fa-gear"></i> settings</a></li>
+                 </div> 
+            <span class="flex items-center gap-5 text-xl mt-15 mx-3"><img src="../images/british flag.png" class="h-8 w-8 rounded-full"><h2>Mariana jones</h2><i class="fa-solid fa-up-down"></i> </span>
+        </div>
+
+        <!--navbar for mobile-->
+        <div class="mobile px-0 py-4 md:hidden flex items-center justify-evenly ">    
+             <button class=" text-4xl hamburger">  ☰</button> 
+            <h1 class="text-3xl font-bold capitalize"><em class="fa-solid fa-certificate text-blue-600"></em>Logo</h1>
+             <h1 class="text-xl"><em class="fa-solid fa-envelope"></em></h1>
+             <h1 class="text-xl"><em class="fa-solid fa-bell"></em></h1>
+             <img src="../images/last last background.jpg"class='h-10 w- rounded-full'>
+        </div>
+
+        <div class="right w-full mt-5 px-5 md:px-10 ">
+            
+           <div class="nav shadow-b-1   items-center md:flex justify-end gap-10 hidden ">
+             <input type="text" placeholder=" Search here" class="border-1 w-70 h-10 outline-none rounded-sm px-3">
+             <h1 class="text-2xl"><em class="fa-solid fa-envelope"></em></h1>
+             <h1 class="text-2xl"><em class="fa-solid fa-bell"></em></h1>
+           </div>
+
+           <section>
+            <h2 class="text-3xl capitalize font-bold my-5 mb-10">settings</h2>
+            <div class="newNavItem text-xl capitalize font-thin border-b ">
+                <ul class="flex gap-5 mb-5 md:overflow-hidden overflow-x-scroll">
+                    <li>profile</li>
+                    <li>password</li>
+                    <li>team</li>
+                    <li>notification</li>
+                    <li>integrations</li>
+                    <li>licenses</li>
+                </ul>
+            </div>
+
+            <!-- Banner Section -->
+  <div class="max-w-5xl mx-auto mt-8 px-4">
+    <div class="flex flex-col sm:flex-row items-center justify-between bg-indigo-50 border border-indigo-200 rounded-md p-4 sm:p-6">
+      <!-- Left -->
+      <div class="flex items-center gap-4">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="profile" class="h-12 w-12 rounded-full object-cover">
+        <div>
+          <h3 class="text-lg font-semibold">Learn how to connect new apps with Rareblocks API</h3>
+          <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consec tetur.</p>
+        </div>
+      </div>
+      <!-- Right -->
+      <div class="flex items-center gap-4 mt-4 sm:mt-0">
+        <button class="text-gray-600 text-sm hover:text-gray-800">Dismiss</button>
+        <button class="bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium px-4 py-2 rounded">View Tutorial</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Connect Apps Section -->
+  <div class="max-w-5xl mx-auto mt-10 px-4">
+    <h2 class="text-xl font-semibold mb-2">Connect Apps</h2>
+    <p class="text-gray-500 mb-4">Lorem ipsum dolor sit amet, consectetur adipis.</p>
+    
+    <!-- Search -->
+    <div class="relative mb-6">
+      <input type="text" placeholder="Search App" class="w-full border rounded-md py-2 pl-10 pr-3 focus:ring-2 focus:ring-indigo-500 outline-none">
+      <i class="fa-solid fa-magnifying-glass absolute top-3 left-3 text-gray-400"></i>
+    </div>
+
+    <!-- App List -->
+    <div class="space-y-5">
+      
+      <!-- Mailchimp -->
+      <div class="flex items-center justify-between border-b pb-4">
+        <div class="flex items-center gap-4">
+          <img src="https://cdn.worldvectorlogo.com/logos/mailchimp-freddie.svg" alt="Mailchimp" class="h-10 w-10">
+          <div>
+            <h3 class="font-medium">Mailchimp</h3>
+            <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipis.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="text-sm text-gray-600">Learn More</span>
+          <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" class="sr-only peer">
+            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:bg-indigo-600 transition"></div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Zapier -->
+      <div class="flex items-center justify-between border-b pb-4">
+        <div class="flex items-center gap-4">
+          <img src="https://cdn.worldvectorlogo.com/logos/zapier-1.svg" alt="Zapier" class="h-10 w-10">
+          <div>
+            <h3 class="font-medium">Zapier</h3>
+            <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet, consectes.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="text-sm text-gray-600">Learn More</span>
+          <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" class="sr-only peer">
+            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:bg-indigo-600 transition"></div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Telegram -->
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-4">
+          <img src="https://cdn.worldvectorlogo.com/logos/telegram-1.svg" alt="Telegram" class="h-10 w-10">
+          <div>
+            <h3 class="font-medium">Telegram</h3>
+            <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipis.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="text-sm text-gray-600">Learn More</span>
+          <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox" class="sr-only peer">
+            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:bg-indigo-600 transition"></div>
+          </label>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+           </section>
+           </div>
+
+        </div>
+
+        
+   
+</body>
+</html>
