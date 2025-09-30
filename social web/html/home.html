@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google Fonts for Sociala-like look -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+    <section class="flex">
+        <!--large screen nav bar -->
+        <div class="wrapper hidden left bg-gray-300 w-80 p-2 lg:flex flex-col z-0">
+            <div class="logo py-6 px-3 bg-white rounded-xl">
+                <h1 class="text-4xl font-bold capitalize text-blue-600"><i class="fa-solid fa-bolt font-thin text-green-400"></i> Socialite</h1>
+            </div>
+
+            <div class=" bg-white px-3 py-6 rounded-xl mt-3">
+            <h4 class="text-md font-bold capitalize text-gray-600">news feed</h4>
+            <ul class="text-2xl font-thin text-gray-700 capitalize" >
+                <li class="mb-3 mt-3"><a href="#"><em class="fa-solid fa-tv  text-2xl text-blue-600"></em> Newsfeed</a></li>
+                <li class="mb-3"><a href='#'><i class="fa-solid fa-ribbon text-red-400"></i> badges</a> </li>
+                <li class="mb-3"><a href='#'><i class="fa-solid fa-earth-americas text-orange-300"></i> explore stories</a></li>
+                <li class="mb-3"><a href='#'><i class="fa-solid fa-bolt text-emerald-200"></i> Popular Groups</a> </li>
+                <li class="mb-3"><a href='#'><i class="fa-solid fa-user text-yellow-300"></i> author profile</a></li>
+                </ul>
+            </div>
+
+            <div class="py-6 px-3 bg-white rounded-xl mt-3">
+                <h4 class="text-md font-bold capitalize text-gray-600">more pages</h4>
+                <ul class="text-2xl font-thin text-gray-700 capitalize">
+                <li class="mb-3 mt-3"><a href='#'><i class="fa-solid fa-inbox text-blue-600"></i> email box</a></li>
+                <li class="mb-3"><a href='#'><i class="fa-solid fa-hotel text-red-400"></i> near hotel</a></li>
+                <li class="mb-3"><a href='#'><i class="fa-solid fa-calendar-days text-orange-300"></i> latest event</a></li>
+                <li class="mb-3"><a href='#'><i class="fa-solid fa-tv text-yellow-300"></i> live stream</a></li>
+            </div>
+
+            <div class="py-6 px-3 bg-white rounded-xl mt-3">
+                <h4 class="text-md font-bold capitalize text-gray-600">account</h4>
+               <ul class="text-2xl font-thin text-gray-700 capitalize">
+                <li class="mb-3 mt-3"><a href='#'><i class="fa-solid fa-gear text-blue-800"></i> settings </a></li>
+                <li class="mb-3"><a href='#'><i class="fa-solid fa-chart-column text-emerald-600"></i> analytics</a></li>
+                <li class="mb-3 "><a href='#'><i class="fa-solid fa-message text-red-400"></i> chat</a></li>
+            </ul>
+            </div>
+
+        </div>
+        <!--small large and small screen nav bar-->
+        <div class="flex justify-between py-3 px-4  lg:hidden fixed top-0 right-0 left-0">
+        <h1 class="text-2xl font-bold capitalize text-blue-600"><i class="fa-solid fa-bolt font-thin text-green-400"></i> Socialite</h1>
+        <ul class="flex  gap-6 text-2xl">
+            <li><a href='#'><i class="fa-solid fa-message"></i></a></li>
+            <li><a href='#'><i class="fa-solid fa-video"></i></a></li>
+            <li><a href = "#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href='#'><i class="fa-solid fa-bars" id="togglebtn"></i></a></li>
+        </ul>
+        </div>
+        <!--small large and big screen nav bar down-->
+        <div class="text-3xl flex fixed lg:hidden bottom-0 right-0 left-0 justify-between px-4 py-3 bg-blue-600 text-white items-center">
+            <i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-cube"></i>
+            <i class="fa-solid fa-life-ring"></i>
+            <i class="fa-solid fa-layer-group"></i>
+            <img src="../images/blue background image.jpg" class="h-15 w-15 rounded-full   ">
+        </div>
+        <div class="right bg-gray-200">
+            <!--right nav bar-->
+            <div class="py-6 px-5 lg:flex  hidden items-center  bg-white  gap-20  fixed z-1000">
+                <div><input type="text" placeholder="start typing to search...."  class="h-12 w-90 border-1 outline-none rounded-2xl resize-hidden bg-gray-300 py-4 px-5 pl-9 text-md font-thin relative">
+                <i class="fa-solid fa-magnifying-glass absolute text-2xl text-gray-500 left-7 top-9"></i></div>
+                <div class="text-3xl flex gap-5">
+                   <div class="h-12 w-12 rounded-full bg-gray-300 flex items-center justify-center">
+                    <i class="fa-solid fa-house   text-gray-500"></i>
+                    </div>
+                    <div class="h-12 w-12 rounded-full bg-gray-300 flex items-center justify-center">
+                    <i class="fa-solid fa-bolt text-gray-500"></i>
+                    </div>
+                    <div class="h-12 w-12 rounded-full bg-gray-300 flex items-center justify-center">
+                    <i class="fa-solid fa-video text-gray-500"></i>
+                    </div>
+                    <div class="h-12 w-12 rounded-full bg-gray-300 flex items-center justify-center">
+                    <i class="fa-solid fa-user text-gray-500"></i> 
+                    </div> 
+                </div>
+                <div class='text-3xl text-blue-600 xl:flex items-center gap-8 hidden'>
+                    <i class="fa-solid fa-bell"></i>
+                    <i class="fa-solid fa-message"></i>
+                    <i class="fa-solid fa-moon"></i>
+                    <img src="../images/blue background image.jpg" class="h-12 w-12 rounded-full   ">
+
+                </div>
+            </div>
+            <!--right body-->
+            <div class="rightBodyContentMainDiv mt-25 px-2 z-10 gap-10 flex">
+                <div class="rightBodyContentMainDivLeft">
+                   <div class="overflow-hidden  max-w-[700px]">
+                     <div class="section1 flex overflow-x-scroll gap-4 ">
+                        <div class='relative'>
+                            <img src="../images/social image1.jpeg" class="h-60 w-60 min-w-[200px] px-2  rounded-md ">
+                            <div class="absolute  bottom-1/5 right-1/2 transform translate-x-1/2 "><img src="../images/social image2.jpeg" class="h-15 w-15 rounded-full "></div>
+                            <div class="absolute bottom-1/10 left-13 text-xl font-bold text-blue-600 ">jose mary</div>
+                        </div>
+                         <div class='relative'>
+                            <img src="../images/social image1.jpeg" class="h-60 w-60 min-w-[200px] px-2 rounded-md ">
+                            <div class="absolute  bottom-1/5 right-1/2 transform translate-x-1/2 "><img src="../images/social image2.jpeg" class="h-15 w-15 rounded-full "></div>
+                            <div class="absolute bottom-1/10 left-13 text-xl font-bold text-blue-600 ">jose mary</div>
+                        </div>
+                         <div class='relative'>
+                            <img src="../images/social image1.jpeg" class="h-60 w-60 min-w-[200px] px-2  rounded-md ">
+                            <div class="absolute  bottom-1/5 right-1/2 transform translate-x-1/2 "><img src="../images/social image2.jpeg" class="h-15 w-15 rounded-full "></div>
+                            <div class="absolute bottom-1/10 left-13 text-xl font-bold text-blue-600 ">jose mary</div>
+                        </div>
+                         <div class='relative'>
+                            <img src="../images/social image1.jpeg" class="h-60 w-60 min-w-[200px] px-2 rounded-md ">
+                            <div class="absolute  bottom-1/5 right-1/2 transform translate-x-1/2 "><img src="../images/social image2.jpeg" class="h-15 w-15 rounded-full "></div>
+                            <div class="absolute bottom-1/10 left-13 text-xl font-bold text-blue-600 ">jose mary</div>
+                        </div>
+                         <div class='relative'>
+                            <img src="../images/social image1.jpeg" class="h-60 w-60 min-w-[200px] px-2  rounded-md ">
+                            <div class="absolute  bottom-1/5 right-1/2 transform translate-x-1/2 "><img src="../images/social image2.jpeg" class="h-15 w-15 rounded-full "></div>
+                            <div class="absolute bottom-1/10 left-13 text-xl font-bold text-blue-600 ">jose mary</div>
+                        </div>
+                         <div class='relative'>
+                            <img src="../images/social image1.jpeg" class="h-60 w-60 min-w-[200px] px-2  rounded-md ">
+                            <div class="absolute  bottom-1/5 right-1/2 transform translate-x-1/2 "><img src="../images/social image2.jpeg" class="h-15 w-15 rounded-full "></div>
+                            <div class="absolute bottom-1/10 left-13 text-xl font-bold text-blue-600 ">jose mary</div>
+                        </div>
+                         <div class='relative'>
+                            <img src="../images/social image1.jpeg" class="h-60 w-60 min-w-[200px] px-2  rounded-md ">
+                            <div class="absolute  bottom-1/5 right-1/2 transform translate-x-1/2 "><img src="../images/social image2.jpeg" class="h-15 w-15 rounded-full "></div>
+                            <div class="absolute bottom-1/10 left-13 text-xl font-bold text-blue-600 ">jose mary</div>
+                        </div>
+                         <div class='relative'>
+                            <img src="../images/social image1.jpeg" class="h-60 w-60 min-w-[200px] px-2  rounded-md ">
+                            <div class="absolute  bottom-1/5 right-1/2 transform translate-x-1/2 "><img src="../images/social image2.jpeg" class="h-15 w-15 rounded-full "></div>
+                            <div class="absolute bottom-1/10 left-13 text-xl font-bold text-blue-600 ">jose mary</div>
+                        </div>
+                       
+                    </div>
+                   </div>
+
+                    <div class="bg-white my-5 py-5 px-10 rounded-xl">
+                        <h2 class="text-md font-thin capitalize mb-3 "><i class="fa-solid fa-pen text-blue-600"></i> Create post</h2>
+                        <div class="relative">
+                          <textarea class="border-1 border-blue-600 h-20 w-150 rounded-xl outline-hidden"></textarea>
+                          <div class="flex items-center gap-5 absolute top-0 mt-2 ml-2"><img src="../images/social image2.jpeg" class="h-10 w-10 rounded-full ">
+                            <h2 class="text-md font-thing capitalize">what's on your mind</h2>
+                        </div></div>
+                        <div class="flex gap-10 mt-3"><h2 class="text-md capitalize font-thin"><i class="fa-solid fa-video text-xl text-red-700"></i> live video</h2>
+                        <h2 class="text-md capitalize font-thin"><i class="fa-solid fa-image text-xl text-green-400"></i> photo/video</h2>
+                        <h2 class="text-md capitalize font-thin"><i class="fa-solid fa-camera text-xl text-orange-400"></i> feeling/activity</h2>
+                        <h2 class="text-md capitalize font-thin"><i class="fa-solid fa-ellipsis text-xl text-neutral-950" ></i></h2>
+                        </div>
+                    
+
+                    </div>
+
+                </div>
+                <div class="rightBodyContentMainDivRight">
+                  <!-- <div class="section1">
+                    <div class="flex justify-between">
+                        <h2 class="text-md font-bold capitalize gray-600">friendrequest</h2>
+                        <h2 class="text-md text-blue-600 font-bold capitalize">seeall</h2>
+                    </div>
+
+                  </div> -->
+                </div>
+            </div>
+        </div>
+            
+
+    </section>
+
+
+
+
+ <script src="../js/interactivivity.js"></script>   
+</body>
+</html>
