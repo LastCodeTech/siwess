@@ -9,9 +9,9 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link href="../css/style.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-100">
     <!--mobile navbar top-->
-    <div class="flex justify-between py-4 px-2  lg:hidden fixed top-0 right-0 left-0">
+    <div class="flex justify-between py-4 px-2  lg:hidden fixed top-0 right-0 left-0 z-10">
         <h1 class="text-3xl font-bold capitalize text-blue-600"><i class="fa-solid fa-bolt font-thin text-green-400"></i> Socialite</h1>
         <ul class="flex  gap-6 text-2xl">
             <li><a href='#'><i class="fa-solid fa-message"></i></a></li>
@@ -21,7 +21,7 @@
         </ul>
         </div>
     <!--mobile navbar bottom-->
-       <div class="text-3xl flex fixed lg:hidden bottom-0 right-0 left-0 justify-between px-4 py-3 bg-blue-600 text-white items-center z-0">
+       <div class="text-3xl flex  lg:hidden fixed bottom-0 right-0 left-0 justify-between px-4 py-3 bg-blue-600 text-white items-center z-10">
             <i class="fa-solid fa-house"></i>
             <i class="fa-solid fa-cube"></i>
             <i class="fa-solid fa-life-ring"></i>
@@ -31,7 +31,7 @@
 
     <section class="flex justify-between">
         <!--off canvas navbar-->
-        <div class=" bg-white left offCanvasNavBar  md:h-screen fixed lg:absolute top-0 left-0 z-10 bottom-0 overflow-y-auto  lg:-translate-x-0  transform -translate-x-full transition-transform duration-300">
+        <div class=" bg-gray-100 left offCanvasNavBar  md:h-screen  top-0 left-0 z-50 bottom-0 overflow-y-auto fixed  lg:-translate-x-0  transform -translate-x-full transition-transform duration-300">
             <div class="logo py-3 px-3 bg-white rounded-xl">
                 <h1 class="text-4xl font-bold capitalize text-blue-600"><i class="fa-solid fa-bolt font-thin text-green-400"></i> Socialite</h1>
             </div>
@@ -53,8 +53,8 @@
                 <li class="mb-3"><a href='#'><i class="fa-solid fa-calendar-days text-blue-600"></i> latest event</a></li>
                 <li class="mb-3"><a href='#'><i class="fa-solid fa-tv text-blue-600"></i> live stream</a></li>
             </div>
-            <div class="px-3 py-6  bg-white">
-                <h4 class="text-md font-bold capitalize text-gray-600">account</h4>
+            <div class="px-3 py-6  bg-white   rounded-xl mt-3">
+                <h4 class=":text-md font-bold capitalize text-gray-600">account</h4>
                <ul class="text-xl font-thin text-gray-700 capitalize">
                 <li class="mb-3 mt-3"><a href='#'><i class="fa-solid fa-gear text-blue-800"></i> settings </a></li>
                 <li class="mb-3"><a href='#'><i class="fa-solid fa-chart-column text-emerald-600"></i> analytics</a></li>
@@ -65,7 +65,7 @@
         </div>
 
         
-        <div class="rightSection ">
+        <div class="rightSection bg-gray-100 lg:ml-60  ">
             <!--main nav bar-->
             <div class="py-6 px-5 lg:flex  hidden items-center  bg-white  gap-20   ">
                 <div class="relative"><div><input type="text" placeholder="start typing to search...."  class="h-12 w-90 border-1 outline-none rounded-2xl resize-hidden bg-gray-300 py-4 px-5 pl-9 text-md font-thin "></div>
@@ -93,60 +93,216 @@
            
            
             </div>
-            <div class="grid lg:grid-cols-[2fr_1fr] grid-rows">
-                <div class="mt-25">
-                     <div class="overflow-hidden  max-w-[700px]">
-                     <div class="section1 flex overflow-x-scroll gap-4 ">
-                        <div class='relative'>
-                            <img src="../images/social image1.jpeg" class="h-60 w-60 min-w-[200px] px-2  rounded-md ">
-                            <div class="absolute  bottom-1/5 right-1/2 transform translate-x-1/2 "><img src="../images/social image2.jpeg" class="h-15 w-15 rounded-full "></div>
-                            <div class="absolute bottom-1/10 left-13 text-xl font-bold text-blue-600 ">jose mary</div>
+            <div class="grid lg:grid-cols-[2fr_1fr] grid-rows z-0 mb-20 lg:mb-0">
+          <div class="lg:mt-6 mt-20 mx-5 ">
+  <div class="overflow-hidden w-full lg:max-w-[700px] bg-gray-100">
+    <div class="section1 flex gap-4 overflow-x-auto scrollbar-hide snap-x snap-mandatory">
+
+      <!-- card -->
+      <div class="relative flex-shrink-0 w-[45%] sm:w-[200px] lg:w-[250px] snap-center">
+        <!-- cover image -->
+        <img src="../images/social image1.jpeg" 
+             class="h-[150px] lg:h-[220px] w-full rounded-md object-cover">
+
+        <!-- centered overlay -->
+        <div class="absolute top-15 right-0 lg:top-25 lg:right-18">
+          <img src="../images/social image2.jpeg" 
+               class="h-12 w-12 lg:h-20 lg:w-20 rounded-full border-2 border-white shadow-md mb-2">
+          <div class="text-base lg:text-lg font-bold text-white drop-shadow-md ">
+            jose mary
+          </div>
+        </div>
+      </div>
+
+      <!-- repeat card -->
+      <div class="relative flex-shrink-0 w-[45%] sm:w-[200px] lg:w-[250px] snap-center">
+        <img src="../images/social image1.jpeg" 
+             class="h-[150px] lg:h-[220px] w-full rounded-md object-cover">
+        <div class="absolute top-15 right-0 lg:top-25 lg:right-18">
+          <img src="../images/social image2.jpeg" 
+               class="h-12 w-12 lg:h-20 lg:w-20 rounded-full border-2 border-white shadow-md mb-2">
+          <div class="text-base lg:text-lg font-bold text-white drop-shadow-md">
+            jose mary
+          </div>
+        </div>
+      </div>
+
+      <div class="relative flex-shrink-0 w-[45%] sm:w-[200px] lg:w-[250px] snap-center">
+        <img src="../images/social image1.jpeg" 
+             class="h-[150px] lg:h-[220px] w-full rounded-md object-cover">
+        <div class="absolute top-15 right-0 lg:top-25 lg:right-18">
+          <img src="../images/social image2.jpeg" 
+               class="h-12 w-12 lg:h-20 lg:w-20 rounded-full border-2 border-white shadow-md mb-2">
+          <div class="text-base lg:text-lg font-bold text-white drop-shadow-md">
+            jose mary
+          </div>
+        </div>
+      </div>
+
+      <div class="relative flex-shrink-0 w-[45%] sm:w-[200px] lg:w-[250px] snap-center">
+        <img src="../images/social image1.jpeg" 
+             class="h-[150px] lg:h-[220px] w-full rounded-md object-cover">
+        <div class="absolute top-15 right-0 lg:top-25 lg:right-18">
+          <img src="../images/social image2.jpeg" 
+               class="h-12 w-12 lg:h-20 lg:w-20 rounded-full border-2 border-white shadow-md mb-2">
+          <div class="text-base lg:text-lg font-bold text-white drop-shadow-md">
+            jose mary
+          </div>
+        </div>
+      </div>
+
+      <div class="relative flex-shrink-0 w-[45%] sm:w-[200px] lg:w-[250px] snap-center">
+        <img src="../images/social image1.jpeg" 
+             class="h-[150px] lg:h-[220px] w-full rounded-md object-cover">
+        <div class="absolute top-15 right-0 lg:top-25 lg:right-18">
+          <img src="../images/social image2.jpeg" 
+               class="h-12 w-12 lg:h-20 lg:w-20 rounded-full border-2 border-white shadow-md mb-2">
+          <div class="text-base lg:text-lg font-bold text-white drop-shadow-md">
+            jose mary
+          </div>
+        </div>
+      </div>
+
+      <div class="relative flex-shrink-0 w-[45%] sm:w-[200px] lg:w-[250px] snap-center">
+        <img src="../images/social image1.jpeg" 
+             class="h-[150px] lg:h-[220px] w-full rounded-md object-cover">
+        <div class="absolute top-15 right-0 lg:top-25 lg:right-18">
+          <img src="../images/social image2.jpeg" 
+               class="h-12 w-12 lg:h-20 lg:w-20 rounded-full border-2 border-white shadow-md mb-2">
+          <div class="text-base lg:text-lg font-bold text-white drop-shadow-md">
+            jose mary
+          </div>
+        </div>
+      </div>
+
+      <div class="relative flex-shrink-0 w-[45%] sm:w-[200px] lg:w-[250px] snap-center">
+        <img src="../images/social image1.jpeg" 
+             class="h-[150px] lg:h-[220px] w-full rounded-md object-cover">
+        <div class="absolute top-15 right-0 lg:top-25 lg:right-18">
+          <img src="../images/social image2.jpeg" 
+               class="h-12 w-12 lg:h-20 lg:w-20 rounded-full border-2 border-white shadow-md mb-2">
+          <div class="text-base lg:text-lg font-bold text-white drop-shadow-md">
+            jose mary
+          </div>
+        </div>
+      </div>
+
+      <div class="relative flex-shrink-0 w-[45%] sm:w-[200px] lg:w-[250px] snap-center">
+        <img src="../images/social image1.jpeg" 
+             class="h-[150px] lg:h-[220px] w-full rounded-md object-cover">
+        <div class="absolute top-15 right-0 lg:top-25 lg:right-18">
+          <img src="../images/social image2.jpeg" 
+               class="h-12 w-12 lg:h-20 lg:w-20 rounded-full border-2 border-white shadow-md mb-2">
+          <div class="text-base lg:text-lg font-bold text-white drop-shadow-md">
+            jose mary
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="bg-white my-5 py-5 lg:px-10 px-4 rounded-xl">
+                        <h2 class="text-md font-thin capitalize mb-3 "><i class="fa-solid fa-pen text-blue-600"></i> Create post</h2>
+                        <div class="relative">
+                          <textarea class="border-1 border-blue-600 h-20 lg:w-150 w-full rounded-xl outline-hidden"></textarea>
+                          <div class="flex items-center gap-5 absolute top-0 mt-2 ml-2"><img src="../images/social image2.jpeg" class="h-10 w-10 rounded-full ">
+                            <h2 class="text-md font-thing capitalize">what's on your mind</h2>
+                        </div></div>
+                        <div class="lg:flex lg:flex-row gap-10 mt-3"><h2 class="text-md capitalize font-thin"><i class="fa-solid fa-video text-xl text-red-700"></i> live video</h2>
+                        <h2 class="text-md capitalize font-thin"><i class="fa-solid fa-image text-xl text-green-400"></i> photo/video</h2>
+                        <h2 class="text-md capitalize font-thin"><i class="fa-solid fa-camera text-xl text-orange-400"></i> feeling/activity</h2>
+                        <h2 class="text-md capitalize font-thin"><i class="fa-solid fa-ellipsis text-xl text-neutral-950" ></i></h2>
                         </div>
-                         <div class='relative'>
-                            <img src="../images/social image1.jpeg" class="h-60 w-60 min-w-[200px] px-2 rounded-md ">
-                            <div class="absolute  bottom-1/5 right-1/2 transform translate-x-1/2 "><img src="../images/social image2.jpeg" class="h-15 w-15 rounded-full "></div>
-                            <div class="absolute bottom-1/10 left-13 text-xl font-bold text-blue-600 ">jose mary</div>
-                        </div>
-                         <div class='relative'>
-                            <img src="../images/social image1.jpeg" class="h-60 w-60 min-w-[200px] px-2  rounded-md ">
-                            <div class="absolute  bottom-1/5 right-1/2 transform translate-x-1/2 "><img src="../images/social image2.jpeg" class="h-15 w-15 rounded-full "></div>
-                            <div class="absolute bottom-1/10 left-13 text-xl font-bold text-blue-600 ">jose mary</div>
-                        </div>
-                         <div class='relative'>
-                            <img src="../images/social image1.jpeg" class="h-60 w-60 min-w-[200px] px-2 rounded-md ">
-                            <div class="absolute  bottom-1/5 right-1/2 transform translate-x-1/2 "><img src="../images/social image2.jpeg" class="h-15 w-15 rounded-full "></div>
-                            <div class="absolute bottom-1/10 left-13 text-xl font-bold text-blue-600 ">jose mary</div>
-                        </div>
-                         <div class='relative'>
-                            <img src="../images/social image1.jpeg" class="h-60 w-60 min-w-[200px] px-2  rounded-md ">
-                            <div class="absolute  bottom-1/5 right-1/2 transform translate-x-1/2 "><img src="../images/social image2.jpeg" class="h-15 w-15 rounded-full "></div>
-                            <div class="absolute bottom-1/10 left-13 text-xl font-bold text-blue-600 ">jose mary</div>
-                        </div>
-                         <div class='relative'>
-                            <img src="../images/social image1.jpeg" class="h-60 w-60 min-w-[200px] px-2  rounded-md ">
-                            <div class="absolute  bottom-1/5 right-1/2 transform translate-x-1/2 "><img src="../images/social image2.jpeg" class="h-15 w-15 rounded-full "></div>
-                            <div class="absolute bottom-1/10 left-13 text-xl font-bold text-blue-600 ">jose mary</div>
-                        </div>
-                         <div class='relative'>
-                            <img src="../images/social image1.jpeg" class="h-60 w-60 min-w-[200px] px-2  rounded-md ">
-                            <div class="absolute  bottom-1/5 right-1/2 transform translate-x-1/2 "><img src="../images/social image2.jpeg" class="h-15 w-15 rounded-full "></div>
-                            <div class="absolute bottom-1/10 left-13 text-xl font-bold text-blue-600 ">jose mary</div>
-                        </div>
-                         <div class='relative'>
-                            <img src="../images/social image1.jpeg" class="h-60 w-60 min-w-[200px] px-2  rounded-md ">
-                            <div class="absolute  bottom-1/5 right-1/2 transform translate-x-1/2 "><img src="../images/social image2.jpeg" class="h-15 w-15 rounded-full "></div>
-                            <div class="absolute bottom-1/10 left-13 text-xl font-bold text-blue-600 ">jose mary</div>
-                        </div>
-                    </div>
-                   </div>
-                </div>
-                <div></div>
-            </div>
+  </div>
+  <div class="bg-white py-5 px-5 rounded-xl">
+    <div class="flex gap-5"><img src="../images/social image13.jpeg" class="h-12 w-12 rounded-full">
+      <div><h1 class="text-base font-md">Surfiya Zakir</h1><h2 class="text-base font-thin">22 min ago</h2></div>
+    </div>
+    <h2 class="text-sm font-thin my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus. <b><a href='#' class="text-blue-600">See more</a></b></h2>
+    <img src="../images/social image11.jpeg" class="h-100 lg:w-150 w-full h-auto rounded-2xl mx-auto">
+    <div class="flex justify-between my-5"><div class="lg:flex lg:flex-row flex flex-col gap-7 ">
+      <div class="h-12 w-12 rounded-full bg-[#0099ff]  flex items-center justify-center">
+      <h2 class="text-xl text-white"><i class="fa-solid fa-thumbs-up"></i></h2>
+      </div>
+      <div class="flex  items-center gap-2"><div class="h-12 w-12 rounded-full text-white bg-[linear-gradient(to_right,#e44d26,#f16529)] flex items-center justify-center">
+      <h2 class="text-xl"><i class="fa-solid fa-heart"></i> </h2>
+      </div>
+      <h2 class="text-xl">2.8k likes</h2></div>
+      <div class="flex items-center gap-3"><div class="h-12 w-12 rounded-full  flex items-center justify-center bg-[#0099ff]">
+      <h2 class="text-xl text-white"><i class="fa-solid fa-comment"></i> </h2>
+      </div>
+       <h2 class="text-xl">22 comments</h2></div>
+    </div>
+    <!-- <h2 class="text-xl"> </h2></div> -->
+     <div class="flex items-center gap-3"><div class="h-12 w-12 rounded-full  flex items-center justify-center bg-[#0099ff]">
+      <h2 class="text-xl text-white"><i class="fa-solid fa-share-nodes"></i></h2>
+      </div>
+       <h2 class="text-xl">Share</h2></div></div>
+
+  </div>
+  <div class="bg-white rounded-xl w-full px-5 py-5 mt-5">
+    <div class="flex justify-between items-center my-3">
+      <div class="flex gap-5"><img src="../images/social image13.jpeg" class="h-12 w-12 rounded-full">
+      <div><h1 class="text-base font-md">Surfiya Zakir</h1><h2 class="text-base font-thin">22 min ago</h2></div>
+    </div>
+    <i class="fa-solid fa-ellipsis text-xl"></i></div>
+        <h2 class="text-sm font-thin my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus. <b><a href='#' class="text-blue-600">See more</a></b></h2>
+     <div class="flex justify-between my-5"><div class="lg:flex lg:flex-row flex flex-col gap-7 ">
+      <div class="h-12 w-12 rounded-full bg-[#0099ff]  flex items-center justify-center">
+      <h2 class="text-xl text-white"><i class="fa-solid fa-thumbs-up"></i></h2>
+      </div>
+      <div class="flex  items-center gap-2"><div class="h-12 w-12 rounded-full text-white bg-[linear-gradient(to_right,#e44d26,#f16529)] flex items-center justify-center">
+      <h2 class="text-xl"><i class="fa-solid fa-heart"></i> </h2>
+      </div>
+      <h2 class="text-xl">2.8k likes</h2></div>
+      <div class="flex items-center gap-3"><div class="h-12 w-12 rounded-full  flex items-center justify-center bg-[#0099ff]">
+      <h2 class="text-xl text-white"><i class="fa-solid fa-comment"></i> </h2>
+      </div>
+       <h2 class="text-xl">22 comments</h2></div>
+    </div>
+    <!-- <h2 class="text-xl"> </h2></div> -->
+     <div class="flex items-center gap-3"><div class="h-12 w-12 rounded-full  flex items-center justify-center bg-[#0099ff]">
+      <h2 class="text-xl text-white"><i class="fa-solid fa-share-nodes"></i></h2>
+      </div>
+       <h2 class="text-xl">Share</h2></div></div>
+  </div>  
+  <div class="bg-white py-5 px-5 rounded-xl mt-5">
+    <div class="flex justify-between items-center my-3"><div class="flex gap-5"><img src="../images/social image13.jpeg" class="h-12 w-12 rounded-full">
+      <div><h1 class="text-base font-md">Surfiya Zakir</h1><h2 class="text-base font-thin">22 min ago</h2></div>
+    </div>
+    <i class="fa-solid fa-ellipsis text-xl"></i></div>
+    <img src="../images/social image14.jpeg" class="h-100 lg:w-150 w-full h-auto rounded-2xl mx-auto">
+    <h2 class="text-sm font-thin my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus. <b><a href='#' class="text-blue-600">See more</a></b></h2>
+    <div class="flex justify-between my-5"><div class="lg:flex lg:flex-row flex flex-col gap-7 ">
+      <div class="h-12 w-12 rounded-full bg-[#0099ff]  flex items-center justify-center">
+      <h2 class="text-xl text-white"><i class="fa-solid fa-thumbs-up"></i></h2>
+      </div>
+      <div class="flex  items-center gap-2"><div class="h-12 w-12 rounded-full text-white bg-[linear-gradient(to_right,#e44d26,#f16529)] flex items-center justify-center">
+      <h2 class="text-xl"><i class="fa-solid fa-heart"></i> </h2>
+      </div>
+      <h2 class="text-xl">2.8k likes</h2></div>
+      <div class="flex items-center gap-3"><div class="h-12 w-12 rounded-full  flex items-center justify-center bg-[#0099ff]">
+      <h2 class="text-xl text-white"><i class="fa-solid fa-comment"></i> </h2>
+      </div>
+       <h2 class="text-xl">22 comments</h2></div>
+    </div>
+    <!-- <h2 class="text-xl"> </h2></div> -->
+     <div class="flex items-center gap-3"><div class="h-12 w-12 rounded-full  flex items-center justify-center bg-[#0099ff]">
+      <h2 class="text-xl text-white"><i class="fa-solid fa-share-nodes"></i></h2>
+      </div>
+       <h2 class="text-xl">Share</h2></div></div>
+  </div>
+
+  <div>
+    
+  </div>
 
 
-        
 
-        
+
+</div>
+<div></div>
+            </div>        
         </div>
     </section>  
     
