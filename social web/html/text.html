@@ -4,53 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link href="../css/style.css" rel='stylesheet'>
 </head>
-<body>
-    <!-- Navbar -->
-<nav class="flex items-center justify-between px-4 py-3 bg-primary text-white">
-  <div class="text-lg font-bold">Logo</div>
-  <!-- Hamburger button -->
-  <button id="menuBtn" class="md:hidden focus:outline-none">
-    <!-- three lines icon -->
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" 
-         viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path stroke-linecap="round" stroke-linejoin="round" 
-            d="M4 6h16M4 12h16M4 18h16"></path>
-    </svg>
-  </button>
-</nav>
-
-<!-- Mobile Sidebar -->
-<div id="mobileMenu" class="fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
-  <div class="flex items-center justify-between p-4 border-b">
-    <span class="text-lg font-bold">Menu</span>
-    <button id="closeBtn" class="focus:outline-none">
-      ✕
-    </button>
+<body class="flex items-center justify-center h-screen bg-blue-300">
+ <div class="flex w-[700px] overflow-x-auto gap-5 px-2 lg:px-0">
+  
+  <div class="text-center bg-white rounded-xl py-7 px-7">
+    <img src="../images/social image9.jpeg"class='h-17 w-17 rounded-full mx-auto'>
+    <h2 class="text-xl font bold capitalize my-3">amir khan</h2>
+    <h2 class="text-base font-thin capitalize">@amirKhan</h2>
+    <button class="border-1 bg-green-400 text-white rounded-2xl px-5 py-1 my-3 border-green-400 text-base">follow</button>
   </div>
-  <ul class="p-4 space-y-4 text-gray-700">
-    <li><a href="#" class="block">Home</a></li>
-    <li><a href="#" class="block">About</a></li>
-    <li><a href="#" class="block">Services</a></li>
-    <li><a href="#" class="block">Contact</a></li>
-  </ul>
-</div>
-
-
-    <script>
-  const menuBtn = document.getElementById('menuBtn');
-  const closeBtn = document.getElementById('closeBtn');
-  const mobileMenu = document.getElementById('mobileMenu');
-
-  menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.remove('-translate-x-full');
-  });
-
-  closeBtn.addEventListener('click', () => {
-    mobileMenu.classList.add('-translate-x-full');
-  });
-</script>
-
-
+    <div class="text-center bg-white rounded-xl py-7 px-7">
+    <img src="../images/social image9.jpeg"class='h-17 w-17 rounded-full mx-auto'>
+    <h2 class="text-xl font bold capitalize my-3">amir khan</h2>
+    <h2 class="text-base font-thin capitalize">@amirKhan</h2>
+    <button class="border-1 bg-green-400 text-white rounded-2xl px-5 py-1 my-3 border-green-400 text-base">follow</button>
+  </div>
+    <div class="text-center bg-white rounded-xl py-7 px-7">
+    <img src="../images/social image9.jpeg"class='h-17 w-17 rounded-full mx-auto'>
+    <h2 class="text-xl font bold capitalize my-3">amir khan</h2>
+    <h2 class="text-base font-thin capitalize">@amirKhan</h2>
+    <button class="border-1 bg-green-400 text-white rounded-2xl px-5 py-1 my-3 border-green-400 text-base">follow</button>
+  </div>
+    <div class="text-center bg-white rounded-xl py-7 px-7">
+    <img src="../images/social image9.jpeg"class='h-17 w-17 rounded-full mx-auto'>
+    <h2 class="text-xl font bold capitalize my-3">amir khan</h2>
+    <h2 class="text-base font-thin capitalize">@amirKhan</h2>
+    <button class="border-1 bg-green-400 text-white rounded-2xl px-5 py-1 my-3 border-green-400 text-base">follow</button>
+  </div>
+    <div class="text-center bg-white rounded-xl py-7 px-7">
+    <img src="../images/social image9.jpeg"class='h-17 w-17 rounded-full mx-auto'>
+    <h2 class="text-xl font bold capitalize my-3">amir khan</h2>
+    <h2 class="text-base font-thin capitalize">@amirKhan</h2>
+    <button class="border-1 bg-green-400 text-white rounded-2xl px-5 py-1 my-3 border-green-400 text-base">follow</button>
+  </div>
+    <div class="text-center bg-white rounded-xl py-7 px-7">
+    <img src="../images/social image9.jpeg"class='h-17 w-17 rounded-full mx-auto'>
+    <h2 class="text-xl font bold capitalize my-3">amir khan</h2>
+    <h2 class="text-base font-thin capitalize">@amirKhan</h2>
+    <button class="border-1 bg-green-400 text-white rounded-2xl px-5 py-1 my-3 border-green-400 text-base">follow</button>
+  </div>
+    <div class="text-center bg-white rounded-xl py-7 px-7">
+    <img src="../images/social image9.jpeg"class='h-17 w-17 rounded-full mx-auto'>
+    <h2 class="text-xl font bold capitalize my-3">amir khan</h2>
+    <h2 class="text-base font-thin capitalize">@amirKhan</h2>
+    <button class="border-1 bg-green-400 text-white rounded-2xl px-5 py-1 my-3 border-green-400 text-base">follow</button>
+  </div>
+    <div class="text-center bg-white rounded-xl py-7 px-7">
+    <img src="../images/social image9.jpeg"class='h-17 w-17 rounded-full mx-auto'>
+    <h2 class="text-xl font bold capitalize my-3">amir khan</h2>
+    <h2 class="text-base font-thin capitalize">@amirKhan</h2>
+    <button class="border-1 bg-green-400 text-white rounded-2xl px-5 py-1 my-3 border-green-400 text-base">follow</button>
+  </div>
+    <div class="text-center bg-white rounded-xl py-7 px-7">
+    <img src="../images/social image9.jpeg"class='h-17 w-17 rounded-full mx-auto'>
+    <h2 class="text-xl font bold capitalize my-3">amir khan</h2>
+    <h2 class="text-base font-thin capitalize">@amirKhan</h2>
+    <button class="border-1 bg-green-400 text-white rounded-2xl px-5 py-1 my-3 border-green-400 text-base">follow</button>
+  </div>
+    <div class="text-center bg-white rounded-xl py-7 px-7">
+    <img src="../images/social image9.jpeg"class='h-17 w-17 rounded-full mx-auto'>
+    <h2 class="text-xl font bold capitalize my-3">amir khan</h2>
+    <h2 class="text-base font-thin capitalize">@amirKhan</h2>
+    <button class="border-1 bg-green-400 text-white rounded-2xl px-5 py-1 my-3 border-green-400 text-base">follow</button>
+  </div>
+ </div>
 </body>
 </html>
